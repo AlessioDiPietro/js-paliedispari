@@ -8,6 +8,7 @@ console.log(parDispUtente);
 numRandUtente = parseInt(prompt("inserisci un numero da 1 a 5"));
 console.log(numRandUtente);
 
+
 // per il computer usando funzione
 function numRandBot() {
    var numeroRandom = Math.floor(Math.random() * 5)+1;
@@ -15,4 +16,31 @@ function numRandBot() {
 }
 
 var risBot = numRandBot();
-console.log(risBot); 
+console.log(risBot);
+
+
+
+// sommiamo i due numeri
+var risFinale = numRandUtente + risBot;
+console.log(risFinale);
+
+
+// stabiliamo se la somma dei due numeri è pari o dispari(usando funzione)
+function pariDispari(numRandUtente, risBot){
+    if ( (risBot + numRandUtente)% 2 == 0 ){
+        return "pari";
+    }else {
+    }
+    
+    return "dispari"
+}
+var pariDispariRis = pariDispari(numRandUtente, risBot);
+console.log(pariDispariRis);
+
+
+// dichiariamo chi ha vinto.
+if (parDispUtente === pariDispariRis ) {
+    console.log ("omplimenti la tua scelta è esatta!");
+}else {
+    console.log ("Mi dispiace. La tua scelta è errata!")
+}
