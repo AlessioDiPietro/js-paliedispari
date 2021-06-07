@@ -29,7 +29,6 @@ console.log(risFinale);
 function pariDispari(numRandUtente, risBot){
     if ( (risBot + numRandUtente)% 2 == 0 ){
         return "pari";
-    }else {
     }
     
     return "dispari"
@@ -48,7 +47,7 @@ if (parDispUtente === pariDispariRis ) {
 
 
 // es2
-// palindroma: chiedere all'utente di inserire una parola. creare una funzione per capire se la pora inserita è palindroma
+// palindroma: chiedere all'utente di inserire una parola. creare una funzione per capire se la parola inserita è palindroma
 
 // chiedere all'utente di inserire una parola
 var word = prompt("inserire una parola qui!")
