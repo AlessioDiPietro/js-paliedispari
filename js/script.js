@@ -44,3 +44,27 @@ if (parDispUtente === pariDispariRis ) {
 }else {
     console.log ("Mi dispiace. La tua scelta è errata!")
 }
+
+
+
+// es2
+// palindroma: chiedere all'utente di inserire una parola. creare una funzione per capire se la pora inserita è palindroma
+
+// chiedere all'utente di inserire una parola
+var word = prompt("inserire una parola qui!")
+
+
+// creare una funzione per capire se la pora inserita è palindroma
+
+function palindromo(word) {
+    var pali = word.split("").reverse().join("");
+
+    if (pali === word){
+        return "è palindroma";
+    } else {
+        return "non è palindroma";
+    }
+}
+
+var risPalindromo = palindromo(word);
+console.log (risPalindromo);
