@@ -40,9 +40,9 @@ console.log(pariDispariRis);
 
 // dichiariamo chi ha vinto.
 if (parDispUtente === pariDispariRis ) {
-    console.log ("omplimenti la tua scelta è esatta!");
+    document.getElementById("risultato-es1").innerHTML = "Complimenti la tua scelta è esatta!"
 }else {
-    console.log ("Mi dispiace. La tua scelta è errata!")
+    document.getElementById("risultato-es1").innerHTML = "Mi dispiace. La tua scelta è errata!"
 }
 
 
@@ -67,4 +67,4 @@ function palindromo(word) {
 }
 
 var risPalindromo = palindromo(word);
-console.log (risPalindromo);
+document.getElementById("risultato-es2").innerHTML ="la parola " + risPalindromo;
